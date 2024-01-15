@@ -2,6 +2,10 @@
 
 Welcome to MovieHunt, This is my frontend project for movie view.
 
+You can see this project live:
+
+https://sametcan7.github.io/MovieHunt/
+
 
 ### Overview;
 <img src="images for readme/Index.png" width="250px"/>
