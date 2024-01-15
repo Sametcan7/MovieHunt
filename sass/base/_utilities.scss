@@ -1,0 +1,55 @@
+@use "../abstracts/variables" as *;
+
+.d-n {
+  display: none;
+}
+
+.d-g {
+  display: grid;
+}
+
+.d-f {
+  display: flex;
+}
+
+.color-p {
+  color: $color-primary;
+}
+
+.color-m {
+  color: $color-middle;
+}
+
+.f-d {
+  display: none;
+}
+
+.de {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.m-r {
+  margin-right: 4rem;
+}
+
+.m-l {
+  margin-left: 4rem;
+}
+
+.bg-righttoleft {
+  background: linear-gradient(90deg, $color-darker -30%, $color-dark);
+}
+
+.bg-lefttoright {
+  background: linear-gradient(270deg, $color-darker -30%, $color-dark);
+}
+
+.bg-toptobottom {
+  background: linear-gradient(0deg, $color-primary -30%, $color-secondary);
+}
+
+.bg-bottomtotop {
+  background: linear-gradient(270deg, $color-darker -30%, $color-dark);
+}

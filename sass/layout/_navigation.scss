@@ -1,0 +1,140 @@
+@use "../abstracts/variables" as *;
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 1.2rem 8rem;
+  margin: auto;
+  background-color: $color-dark;
+}
+
+.brand-container {
+  font-family: $header-font;
+  background-color: rgb(26, 26, 26);
+  font-size: 3rem;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  // &:hover {
+  //   cursor: pointer;
+  // }
+}
+
+.nav-span {
+  font-size: 2rem;
+  color: $color-primary;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background-color: rgb(25, 25, 25);
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    background-color: $color-darker;
+  }
+}
+
+.mobile-nav {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 0.8rem 0;
+  background-color: $color-dark;
+  justify-content: center;
+  gap: 0.8rem;
+  span {
+    font-size: 1.8rem;
+    color: $color-primary;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: rgb(25, 25, 25);
+    &:hover {
+      cursor: pointer;
+    }
+    &:active {
+      background-color: $color-darker;
+    }
+  }
+}
+
+.m-favs {
+  position: relative;
+}
+
+.m-favorites {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 4rem;
+  left: 50%;
+  width: 20rem;
+  transform: translate(-50%);
+  height: 20rem;
+  background-color: $color-dark;
+  box-shadow: 0px 0px 3rem 0.5rem rgb(0, 0, 0);
+  border-radius: 5px;
+  cursor: initial;
+  z-index: 2;
+  overflow-y: auto;
+}
+
+.brand-span {
+  height: 100%;
+}
+
+.nav-form {
+  flex-grow: 2;
+  max-width: 40rem;
+  background-color: rgb(25, 25, 25);
+  border-radius: 0.8rem;
+
+  &-container {
+    padding: 0.1rem 0rem;
+    display: flex;
+    border-radius: 0.8rem;
+    &:focus-within {
+      outline: 2px solid yellow;
+    }
+    &-input {
+      border-radius: 0.8rem;
+      width: 100%;
+      border: none;
+      outline: none;
+      background-color: rgb(25, 25, 25);
+    }
+
+    &-button {
+      border: none;
+      outline: none;
+      background-color: rgb(25, 25, 25);
+      border-radius: 0.8rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////
+//                            Favorites                               //
+////////////////////////////////////////////////////////////////////////
+.nav-favorites-section {
+  position: relative;
+}
+.favorites {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 5rem;
+  left: 50%;
+  width: 25rem;
+  transform: translate(-50%);
+  height: 30rem;
+  background-color: $color-dark;
+  box-shadow: 0px 0px 3rem 0.5rem rgb(0, 0, 0);
+  border-radius: 5px;
+  cursor: initial;
+  z-index: 2;
+  overflow-y: auto;
+}

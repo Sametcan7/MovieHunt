@@ -1,0 +1,301 @@
+/* BELOW 1312px (Smaller desktops) */
+
+@media (max-width: 82em) {
+  .slider {
+    max-width: none;
+  }
+  .slider-header {
+    min-width: 33rem;
+  }
+}
+
+/* BELOW 1184px (Landscape Tablets) */
+
+@media (max-width: 74em) {
+  html {
+    font-size: 56.25%;
+  }
+  .slider-header-title {
+    font-size: 4.5rem;
+  }
+  .slider-header-text {
+    font-size: 1.6rem;
+  }
+
+  .background {
+    height: 50rem;
+  }
+
+  .nav-container {
+    padding: 1.2rem 2rem;
+  }
+}
+
+/* BELOW 928px (Tablets) */
+
+@media (max-width: 58em) {
+  html {
+    font-size: 50%;
+  }
+  .slider {
+    padding: 0.5rem 4rem;
+  }
+  .slider-header {
+    min-width: 27rem;
+  }
+  .slider-button {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 2.5rem;
+  }
+
+  .background {
+    height: 40rem;
+  }
+
+  .background h2 {
+    font-size: 4rem;
+    letter-spacing: 1rem;
+  }
+
+  .nav-container {
+    gap: 2rem;
+  }
+
+  .login-form {
+    width: 50rem;
+    height: 40rem;
+  }
+  .login-form h2 {
+    font-size: 4rem;
+  }
+
+  .login-form-close {
+    font-size: 3rem !important;
+  }
+
+  .login-form h2 span:hover {
+    scale: 1;
+  }
+
+  .sign-section-main {
+    width: 50rem;
+    height: 50rem;
+  }
+}
+
+/* BELOW 720px (Smaller tablets) */
+
+@media (max-width: 45em) {
+  .nav-container {
+    gap: 1rem;
+  }
+
+  .slider-header-title {
+    font-size: 4rem;
+  }
+  .slider-header-text {
+    font-size: 1.4rem;
+  }
+  .slider-header {
+    min-width: 22rem;
+    padding: 0 2rem;
+  }
+
+  .background {
+    height: 35rem;
+  }
+}
+
+@media (max-width: 41em) {
+  .nav-container {
+    padding: 1.2rem 0.6rem;
+  }
+
+  .nav-form {
+    max-width: 18rem;
+  }
+}
+
+/* BELOW 544px (Phones) */
+@media (max-width: 35em) {
+  .slider {
+    flex-direction: column;
+  }
+
+  .slider-header {
+    padding: 1.2rem 0;
+  }
+
+  .slider-header-title {
+    font-size: 3rem;
+  }
+
+  .slider-container-images img {
+    width: 33.33%;
+  }
+
+  .background {
+    height: 20rem;
+  }
+
+  .slider-section:nth-child(even) .slider {
+    flex-direction: column-reverse;
+  }
+
+  .nav-container {
+    gap: 0.8rem;
+    padding: 1.2rem 1rem;
+  }
+
+  .background h2 {
+    font-size: 3rem;
+    letter-spacing: 0;
+  }
+
+  .menu {
+    grid-template-columns: 1fr;
+    width: 100%;
+    row-gap: 0;
+  }
+
+  .menu-container ul {
+    gap: 0;
+    margin-top: 0;
+  }
+
+  .menu1,
+  .menu2,
+  .menu3,
+  .menu4,
+  .menu5,
+  .menu6 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .login-form {
+    width: 40rem;
+    height: 30rem;
+  }
+
+  .login-form-input-container {
+    padding: 0rem 0rem;
+  }
+  .login-form h2 {
+    font-size: 3rem;
+  }
+
+  .login-form h2 span {
+    top: 0.6rem;
+  }
+
+  .input-data {
+    height: 4rem;
+    margin: 0.4rem 0px;
+  }
+
+  .sign-input {
+    bottom: 0%;
+    font-size: 1.4rem;
+  }
+
+  .sign-label {
+    margin-left: 0.4rem;
+  }
+
+  .login-form-close {
+    font-size: 2.5rem !important;
+  }
+
+  .nav-span {
+    display: none;
+  }
+
+  .list-nav-menu {
+    display: inline-block !important;
+  }
+
+  .nav-favorites-section {
+    position: static;
+  }
+
+  .favorites {
+    top: 100px;
+    transform: translate(-50%);
+    left: 50%;
+  }
+
+  .footer {
+    gap: 0rem;
+    padding: 1rem 0rem;
+  }
+
+  .footer-a {
+    font-size: 2rem;
+  }
+
+  .footer-icons img {
+    height: 3rem;
+  }
+
+  .footer-ul {
+    font-size: 1.4rem;
+  }
+  .footer-ul li {
+    margin: 0 0.2rem;
+  }
+
+  .sign-section {
+    margin-top: 4rem;
+    min-width: 40rem;
+  }
+  .sign-section-main-header {
+    padding-top: 1rem;
+    font-size: 3rem;
+  }
+
+  .sign-section-main {
+    width: 35rem;
+    height: 35rem;
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .slider {
+    padding: 0.5rem 1.2rem;
+  }
+
+  .slider-header {
+    padding: 0.4rem 0;
+  }
+
+  .nav-container {
+    flex-direction: column;
+  }
+  .favorites {
+    top: 185px;
+    transform: translate(-50%);
+    left: 50%;
+  }
+
+  .slider-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 2rem !important;
+  }
+
+  .footer-a {
+    font-size: 1.2rem;
+  }
+}
+
+
+@media (hover:hover) {
+  .list-button:hover {
+    background: #726255;
+    color: #f0c75e;
+    cursor: pointer;
+  }
+}

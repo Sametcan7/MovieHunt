@@ -1,0 +1,157 @@
+@use "../abstracts/variables" as *;
+
+////////////////////////////////////////////////////////////////////////
+//                           Category Page                            //
+////////////////////////////////////////////////////////////////////////
+
+.container-section {
+  > div {
+    padding: 1rem 6rem;
+  }
+  color: $color-primary;
+  font-family: $base-font;
+  h2 {
+    text-align: center;
+    font-size: 8rem;
+    text-shadow: 0px 0px 2rem $color-primary;
+  }
+}
+
+.movie-container {
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  gap: 2rem;
+  border: 0.2rem solid $color-secondary;
+  text-shadow: -1px 1px 1.5rem $color-secondary;
+  background-color: $color-dark;
+  img {
+    object-fit: contain;
+    width: 35%;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 3rem -1rem $color-secondary;
+  }
+}
+
+.properties {
+  max-width: 335px;
+  font-size: 2rem;
+  text-align: center;
+  ul {
+    list-style-type: none;
+    li {
+      margin-bottom: 1.2rem;
+    }
+  }
+  div {
+    text-align: center;
+    padding-top: 4rem;
+    text-align: center;
+    font-size: 4rem;
+    cursor: pointer;
+  }
+  span {
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+}
+
+.list-button {
+  margin-top: 2rem;
+  background: $color-secondary;
+  border-radius: 2rem;
+  font-family: $base-font;
+  color: $color-middle;
+  font-size: 2rem;
+  padding: 1rem 2rem 1rem 2rem;
+  border: solid $color-secondary 2px;
+  text-decoration: none;
+  transition: 0.2s;
+
+  // &:hover {
+  //   background: $color-middle;
+  //   color: $color-primary;
+  //   cursor: pointer;
+  // }
+  &:active {
+    scale: 1.1;
+  }
+}
+
+.listed-favs {
+  margin-top: 0.4rem;
+  width: 20rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: 2px solid $color-secondary;
+  border-radius: 2rem;
+}
+.fav-img {
+  width: 6rem;
+  border-radius: 2rem;
+}
+
+.favs-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: red;
+  background-color: transparent;
+  border: none;
+}
+
+.favs-button:hover {
+  cursor: pointer;
+}
+
+.favs-button:active {
+  color: black;
+}
+
+.scale-in-center {
+  animation: scale-in-center 0.5s cubic-bezier(1, 0, 0, 1) both;
+}
+
+@media (max-width: 45em) {
+  .container-section > div {
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+  }
+  .movie-container {
+    flex-direction: column;
+  }
+  .container-section h2 {
+    font-size: 6rem;
+  }
+  .properties {
+    font-size: 1.7rem;
+  }
+  .properties ul li {
+    margin-bottom: 0.2rem;
+  }
+  .list-button {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .movie-container img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 35em) {
+  .container-section h2 {
+    font-size: 5rem;
+  }
+
+  .movie-container img {
+    width: 50%;
+    min-width: 150px;
+  }
+}

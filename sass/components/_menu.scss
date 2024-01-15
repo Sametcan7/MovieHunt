@@ -1,0 +1,77 @@
+@use "../abstracts/variables" as *;
+
+.menu {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  position: absolute;
+  background-color: $color-dark;
+  width: fit-content;
+  row-gap: 2rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 4px;
+  border: 2px solid rgba(255, 255, 0, 0.3);
+  box-shadow: 0px 0px 3rem 0.5rem rgb(0, 0, 0);
+  z-index: 1;
+  &-header {
+    border: 3px solid black;
+    margin-top: 0.4rem;
+    border-style: ridge;
+  }
+}
+
+.menu-container {
+  width: 100%;
+}
+
+.menu-container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  list-style: none;
+  li:hover {
+    cursor: pointer;
+  }
+}
+
+.menu1 {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.menu2 {
+  grid-column: 3 / 5;
+  grid-row: 1;
+}
+
+.menu3 {
+  grid-column: 5 / 7;
+  grid-row: 1;
+}
+
+.menu4 {
+  grid-column: 2 / 4;
+  grid-row: 2;
+}
+
+.menu5 {
+  grid-column: 4 / 6;
+  grid-row: 2;
+}
+
+.list-nav-menu {
+  display: none !important;
+  color: $color-primary;
+  background-color: rgb(25, 25, 25);
+  padding: 0.6rem;
+  border-radius: 6px;
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    background-color: $color-darker;
+  }
+}

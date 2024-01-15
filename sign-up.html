@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Hunt</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="sign-up-body">
+    <section class="sign-section">
+      <div class="sign-section-nav">
+        <a class="nav-a brand-container" href="index.html">
+          <span class="color-p brand-span">Movie</span>&nbsp;<span
+            class="color-m brand-span"
+            >Hunt</span
+          >
+        </a>
+        <div>
+          <a
+            class="sign-a sign-section-nav-turnback"
+            onclick="goBack()"
+            href="#"
+            ><span class="material-symbols-outlined"> arrow_left_alt </span
+            >Back</a
+          >
+        </div>
+      </div>
+
+      <div class="sign-section-main bg-toptobottom">
+        <div class="sign-section-main-header">Sign up for Many Fun Movies!</div>
+        <div class="sign-section-main-form-container">
+          <form action="" method="get" class="sign-form">
+            <div class="sign-form-input-container">
+              <div class="input-data">
+                <input
+                  class="sign-input"
+                  autocomplete="off"
+                  type="text"
+                  name="username"
+                  id="username"
+                  required
+                />
+                <div class="underline"></div>
+                <label class="sign-label" for="username">Username</label>
+              </div>
+              <div class="input-data">
+                <input
+                  class="sign-input"
+                  type="password"
+                  name="password"
+                  id="password"
+                  required
+                />
+                <div class="underline"></div>
+                <label class="sign-label" for="password">Password</label>
+              </div>
+              <div class="fp"><span>Forget Password?</span></div>
+
+              <button class="form-button">Sign In</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="js/sign-up.js"></script>
+</html>
+
+<div class="eventvar"><p></p></div>

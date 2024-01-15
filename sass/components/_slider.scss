@@ -1,0 +1,68 @@
+@use "../abstracts/variables" as *;
+
+////////////////////////////////////////////////////////////////////////
+//                               Slider                               //
+////////////////////////////////////////////////////////////////////////
+
+.slider {
+  display: flex;
+  align-items: center;
+  padding: 1rem 5rem;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: auto;
+
+  &-section {
+    margin-bottom: 0.4rem;
+  }
+  &-header {
+    min-width: 40rem;
+    padding: 0 3rem;
+  }
+  &-button {
+    border-radius: 100%;
+    width: 5rem;
+    height: 5rem;
+    background-color: $color-primary;
+    margin: auto;
+  }
+}
+
+.slider-container {
+
+  position: relative;
+  &-images {
+    display: flex;
+    overflow: hidden;
+    cursor: grab;
+    &:active {
+      cursor: grabbing;
+    }
+    img {
+      object-fit: fill;
+      width: 25%;
+      padding: 0.2rem;
+      border-radius: 0.6rem;
+    }
+  }
+}
+
+div #prev-slide {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+div #next-slide {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(50%, -50%);
+  &:hover {
+    cursor: pointer;
+  }
+}

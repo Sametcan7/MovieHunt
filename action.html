@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Hunt</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Login Section -->
+    <section class="login-section d-n">
+      <form action="" method="get" class="login-form">
+        <h2>
+          Login
+          <span class="material-symbols-outlined login-form-close">
+            close
+          </span>
+        </h2>
+        <div class="login-form-input-container">
+          <div class="input-data">
+            <input
+              class="sign-input"
+              autocomplete="off"
+              type="text"
+              name="username"
+              id="username"
+              required
+            />
+            <div class="underline"></div>
+            <label class="sign-label" for="username">Username</label>
+          </div>
+          <div class="input-data">
+            <input
+              class="sign-input"
+              type="password"
+              name="password"
+              id="password"
+              required
+            />
+            <div class="underline"></div>
+            <label class="sign-label" for="password">Password</label>
+          </div>
+          <div class="fp"><a href="sign-up.html">Or Sign Up!</a></div>
+
+          <button class="form-button">Login</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <a class="nav-a" href="index.html">
+          <div class="brand-container">
+            <span class="color-p brand-span">Movie</span>&nbsp;<span
+              class="color-m brand-span"
+              >Hunt</span
+            >
+          </div>
+        </a>
+        <div>
+          <span class="nav-span menus">Menu</span>
+        </div>
+        <div class="nav-form">
+          <form class="nav-form-container" id="search" action="">
+            <input
+              spellcheck="false"
+              name="q"
+              type="text"
+              class="nav-form-container-input"
+            />
+            <button class="material-symbols-outlined nav-form-container-button">
+              search
+            </button>
+          </form>
+        </div>
+        <div class="nav-favorites-section">
+          <span class="favs nav-span">Favorites </span>
+          <div class="favorites f-d">
+            <p class="fav-p">No added to favorites</p>
+          </div>
+        </div>
+        <span class="nav-span">
+          <a class="nav-a" href="sign-up.html">Sign Up</a>
+        </span>
+        <span class="nav-span nav-login">Login</span>
+        <span class="material-symbols-outlined list-nav-menu"> menu </span>
+      </div>
+      <!-- Mobile Navigation -->
+
+      <div class="mobile-nav d-n">
+        <span class="m-menu">Menu</span>
+        <span class="m-favs">Favorites</span>
+        <span class="m-sign"
+          ><a class="nav-a" href="sign-up.html">Sign</a></span
+        >
+        <span class="m-login">Login</span>
+      </div>
+    </nav>
+    <div class="menu d-n scale-in-center">
+      <div class="menu1 menu-container">
+        <p class="menu-header">Movies</p>
+        <ul>
+          <li>Action</li>
+          <li>Adventure</li>
+          <li>Documentary</li>
+          <li>Horror</li>
+          <li>War</li>
+        </ul>
+      </div>
+      <div class="menu2 menu-container">
+        <p class="menu-header">Tv Shows</p>
+        <ul>
+          <li>Most Popular TV Shows</li>
+          <li>TV News</li>
+          <li>Watch TV Live</li>
+          <li>Browse TV Shows By Genre</li>
+          <li>Top 250 TV Shows</li>
+        </ul>
+      </div>
+      <div class="menu3 menu-container">
+        <p class="menu-header">Awards & Events</p>
+        <ul>
+          <li>Oscars</li>
+          <li>Emmys</li>
+          <li>Best Of 2023</li>
+          <li>Holiday Pics</li>
+        </ul>
+      </div>
+      <div class="menu4 menu-container">
+        <p class="menu-header">Must Watch</p>
+        <ul>
+          <li>Imdb</li>
+          <li>Rotten Tomatoes</li>
+          <li>Metacritic</li>
+        </ul>
+      </div>
+      <div class="menu5 menu-container">
+        <p class="menu-header">Community</p>
+        <ul>
+          <li>Instagram</li>
+          <li>Facebook</li>
+          <li>Twitter</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="container-section">
+      <h2>Action</h2>
+
+      <div>
+        <div class="movie-container">
+          <img
+            src="Movies/Action/Dune Part One/Dune Part One.jpg"
+            alt=""
+            srcset=""
+          />
+          <div class="properties">
+            <ul>
+              <li class="movie-name">Dune: Part One</li>
+              <li><span>Director:</span> Denis Villeneuve</li>
+              <li>
+                <span>Writers:</span> Jon Spaihts, Denis Villeneuve, Eric Roth
+              </li>
+              <li>
+                <span>Stars:</span> Timothée Chalamet, Rebecca Ferguson, Zendaya
+              </li>
+            </ul>
+            <button class="list-button">Add To Favorites</button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="movie-container">
+          <img
+            src="Movies/Action/Expend4bles/Expend4bles.jpg"
+            alt=""
+            srcset=""
+          />
+          <div class="properties">
+            <ul>
+              <li class="movie-name">Expend4bles</li>
+              <li><span>Director:</span> Scott Waugh</li>
+              <li>
+                <span>Writers:</span> Kurt Wimmer, Tad Daggerhart, Max Adams
+              </li>
+              <li><span>Stars:</span> Jason Statham, 50 Cent, Megan Fox</li>
+            </ul>
+            <button class="list-button">Add To Favorites</button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="movie-container">
+          <img src="Movies/Action/Fast X/Fast X.jpg" alt="" srcset="" />
+          <div class="properties">
+            <ul>
+              <li class="movie-name">Fast X</li>
+              <li><span>Director:</span> Louis Leterrier, Justin Lin</li>
+              <li><span>Writers:</span> Dan Mazeau, Justin Lin, Zach Dean</li>
+              <li>
+                <span>Stars:</span> Vin Diesel, Michelle Rodriguez, Jason
+                Statham
+              </li>
+            </ul>
+            <button class="list-button">Add To Favorites</button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="movie-container">
+          <img
+            src="Movies/Action/Guardians of the Galaxy Vol. 3/Guardians of the Galaxy Vol. 3.jpg"
+            alt=""
+            srcset=""
+          />
+          <div class="properties">
+            <ul>
+              <li class="movie-name">Guardians of the Galaxy Vol. 3</li>
+              <li><span>Director:</span> James Gunn</li>
+              <li><span>Writers:</span> James Gunn, Jim Starlin, Stan Lee</li>
+              <li>
+                <span>Stars:</span> Chris Pratt, Chukwudi Iwuji, Bradley Cooper
+              </li>
+            </ul>
+            <button class="list-button">Add To Favorites</button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="movie-container">
+          <img src="Movies/Action/Inception/Inception.jpg" alt="" srcset="" />
+          <div class="properties">
+            <ul>
+              <li class="movie-name">Inception</li>
+              <li><span>Director:</span> Christopher Nolan</li>
+              <li><span>Writers:</span> Christopher Nolan</li>
+              <li>
+                <span>Stars:</span> Leonardo DiCaprio, Joseph Gordon-Levitt,
+                Elliot Page
+              </li>
+            </ul>
+            <button class="list-button">Add To Favorites</button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="movie-container">
+          <img
+            src="Movies/Action/John Wick 4/John Wick 4.jpg"
+            alt=""
+            srcset=""
+          />
+          <div class="properties">
+            <ul>
+              <li class="movie-name">John Wick: Chapter 4</li>
+              <li><span>Director:</span> Chad Stahelski</li>
+              <li>
+                <span>Writers:</span> JShay Hatten, Michael Finch, Derek Kolstad
+              </li>
+              <li>
+                <span>Stars:</span> Keanu Reeves, Laurence Fishburne, George
+                Georgiou
+              </li>
+            </ul>
+            <button class="list-button">Add To Favorites</button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="movie-container">
+          <img src="Movies/Action/Napoleon/Napoleon.jpg" alt="" srcset="" />
+          <div class="properties">
+            <ul>
+              <li class="movie-name">Napoleon</li>
+              <li><span>Director:</span> Ridley Scott</li>
+              <li>Writer: David Scarpa</li>
+              <li>
+                <span>Stars:</span> Joaquin Phoenix, Vanessa Kirby, Tahar Rahim
+              </li>
+            </ul>
+            <button class="list-button">Add To Favorites</button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="movie-container">
+          <img src="Movies/Action/The Batman/The Batman.jpg" alt="" srcset="" />
+          <div class="properties">
+            <ul>
+              <li class="movie-name">The Batman</li>
+              <li><span>Director:</span> Matt Reeves</li>
+              <li><span>Writers:</span> Matt Reeves, Peter Craig, Bob Kane</li>
+              <li>
+                <span>Stars:</span> Robert Pattinson, Zoë Kravitz, Jeffrey
+                Wright
+              </li>
+            </ul>
+            <button class="list-button">Add To Favorites</button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="movie-container">
+          <img
+            src="Movies/Action/The Lord of the Rings The Fellowship of the Ring/The Lord of the Rings The Fellowship of the Ring.jpg"
+            alt=""
+            srcset=""
+          />
+          <div class="properties">
+            <ul>
+              <li class="movie-name">
+                The Lord of the Rings: The Fellowship of the Ring
+              </li>
+              <li><span>Director:</span> Peter Jackson</li>
+              <li>
+                <span>Writers:</span> J.R.R. Tolkien, Fran Walsh, Philippa
+                Boyens
+              </li>
+              <li>
+                <span>Stars:</span> Elijah Wood, Ian McKellen, Orlando Bloom
+              </li>
+            </ul>
+            <button class="list-button">Add To Favorites</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-icons">
+          <img class="svg" src="svg/facebook.svg" />
+          <img class="svg" src="svg/instagram.svg" />
+          <img class="svg" src="svg/twitter.svg" />
+          <img class="svg" src="svg/youtube.svg" />
+        </div>
+        <div class="footer-sign">
+          <a class="footer-a" href="sign-up.html">For More Sign Up!</a>
+        </div>
+        <div class="footer-site">
+          <ul class="footer-ul">
+            <li>Get The Movie Hunt App!</li>
+            <li>Help</li>
+            <li>Site Index</li>
+            <li>Movie Hunt Pro</li>
+            <li>For Developer</li>
+          </ul>
+
+          <ul class="footer-ul">
+            <li>Advertising</li>
+            <li>Work With Us</li>
+            <li>Condition of Use</li>
+            <li>Privacy Policy</li>
+            <li>About Movie Hunt</li>
+            <li>Statistics</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/javascript.js"></script>
+  </body>
+</html>

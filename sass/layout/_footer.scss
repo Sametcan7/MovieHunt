@@ -1,0 +1,51 @@
+@use "../abstracts/variables" as *;
+
+////////////////////////////////////////////////////////////////////////
+//                              Footer                                //
+////////////////////////////////////////////////////////////////////////
+
+.footer {
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: $color-dark;
+  margin-bottom: 0.4rem;
+  &-sign {
+    margin: 2rem 2rem;
+    cursor: pointer;
+  }
+  &-a {
+    background-color: $color-darker;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+  }
+  &-icons img {
+    &:hover {
+      filter: contrast(100%);
+    }
+    height: 4rem;
+    cursor: pointer;
+    margin-right: 1.2rem;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &-ul {
+    margin-top: 1rem;
+    list-style: none;
+  }
+
+  &-ul li {
+    margin: 0 0.4rem;
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+
+.svg {
+  filter: invert(60%) sepia(100%) saturate(2000%) hue-rotate(90deg)
+    contrast(100%);
+}
