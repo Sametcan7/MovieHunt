@@ -173,11 +173,11 @@ movieButton.forEach((button) => {
         } else {
           favorites.style.overflowY = "hidden";
         }
-        console.log(favNames.length);
+      
         if (favNames.length >= 1) {
           favorites.style.justifyContent = "flex-start";
           if (favorites.querySelector(".fav-p")) {
-            console.log(favorites.querySelector(".fav-p").remove());
+     
           }
         }
       });
@@ -190,7 +190,6 @@ movieButton.forEach((button) => {
 // Login Section Open With Nav
 function loginHandler(query) {
   query.addEventListener("click", () => {
-    console.log("merhaba");
     loginSection.classList.toggle("d-f");
     loginSection.classList.toggle("d-n");
   });
@@ -205,7 +204,6 @@ loginSection.addEventListener("click", (e) => {
   if (e.target.classList.contains("login-section")) {
     loginSection.classList.toggle("d-n");
     loginSection.classList.toggle("d-f");
-    console.log(e.target);
   }
 });
 
@@ -228,6 +226,4 @@ listNavMenu.addEventListener("click", () => {
 
 
 
-// window.addEventListener("click", function (e) {
-//   console.log(e.target);
-// });
+
